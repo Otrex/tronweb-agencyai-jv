@@ -34,6 +34,15 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
+ul.ulm {
+  padding-left: 10px;
+  list-style-image: linear-gradient(to left bottom, red, blue);
+}
+
+ul.ulm li {
+  padding-left: 15px;
+  list-style-image: linear-gradient(to left bottom, red, blue);
+}
 :root {
   /* COLORS */
   --black: #000;
