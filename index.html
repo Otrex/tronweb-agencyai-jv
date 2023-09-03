@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,12 +16,21 @@
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <meta name="og:description" hid="og:description" content="Launching Sept. 9th" />
+    <meta
+      name="og:description"
+      hid="og:description"
+      content="Launching Sept. 9th"
+    />
     <meta name="og:title" hid="og:title" content="AgencyAI JV" />
-    <meta name="og:image" hid="og:image" content="asset/images/meta/URLPreview.png" />
+    <meta
+      name="og:image"
+      hid="og:image"
+      content="asset/images/meta/URLPreview.png"
+    />
 
     <script defer src="asset/js/index.js"></script>
     <script defer src="asset/js/scroll.js"></script>
+    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
   </head>
 
   <body>
@@ -71,7 +80,8 @@
         </header>
 
         <!-- 👇🏽 Section Background Image -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute w-100 hero-bg-img top-0 start-0 z-n1"
           src="asset/images/Mask group.svg"
           alt=""
@@ -105,16 +115,15 @@
                 >
                 To Deliver Services<br />
                 Completely Hands-Free For YOU and Helps
-                <span class="fw-bold">
-                  Manage the agency as you scale.
-                </span>
+                <span class="fw-bold"> Manage the agency as you scale. </span>
               </p>
 
               <div
                 class="position-absolute start-0 hide-on-650 welcome-logo-icon-div"
                 style="top: 55%"
               >
-                <img loading="lazy"
+                <img
+                  loading="lazy"
                   class="welcome-logo-icon"
                   src="asset/images/icons/face.svg"
                   alt=""
@@ -125,7 +134,8 @@
                 class="position-absolute end-0 hide-on-650 welcome-logo-icon-div"
                 style="top: 20%"
               >
-                <img loading="lazy"
+                <img
+                  loading="lazy"
                   class="welcome-logo-icon"
                   src="asset/images/icons/face_copy.svg"
                   alt=""
@@ -297,7 +307,11 @@
           >
             <div class="d-flex align-items-center gap-3 gap-md-4">
               <div class="rocket-div rounded-circle">
-                <img loading="lazy" src="asset/images/icons/rocket.svg" alt="" />
+                <img
+                  loading="lazy"
+                  src="asset/images/icons/rocket.svg"
+                  alt=""
+                />
               </div>
 
               <div class="d-flex flex-column launch-time-texts gap-2">
@@ -341,19 +355,45 @@
                 >
                   <span>Get your </span>
                   <span class="d-flex">
-                    <img loading="lazy" src="asset/images/jvzoo-logo.svg" alt="Jvzoo Logo" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/jvzoo-logo.svg"
+                      alt="Jvzoo Logo"
+                    />
                   </span>
                   <span>Affiliate</span>
                 </p>
               </header>
 
+              <script> 
+                function checkSubmitted(e) {
+                  console.log(e);
+                }
+              </script>
+
               <form
+                action="https://app.convertkit.com/forms/5557219/subscriptions"
+                method="post"
+                onsubmit="checkSubmitted"
+                data-sv-form="5557219"
+                data-uid="c708b8332b"
+                data-format="inline"
+                data-version="5"
+                data-options='{"settings":{"after_subscribe":{"action":"redirect","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":"https://www.jvzoo.com/affiliate/affiliateinfonew/index/398421"},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
+                min-width="400 500 600 700 800"
                 class="position-relative d-flex flex-md-row flex-column mb-2 mw-100"
               >
-                <div class="position-relative flex-one">
+                <div class="position-relative flex-one" data-style="clean">
+                  <ul
+                    class="formkit-alert formkit-alert-error"
+                    data-element="errors"
+                    data-group="alert"
+                  ></ul>
+              
                   <input
                     class="w-100"
                     type="email"
+                    name="email_address"
                     placeholder="Enter Email Address"
                     required
                   />
@@ -379,7 +419,7 @@
                   </span>
                 </div>
 
-                <button class="primary-btn btn-with-ripple">
+                <button data-element="submit" class="primary-btn btn-with-ripple">
                   Get Affiliate Link
                   <span class="btn-ripple"></span>
                 </button>
@@ -387,7 +427,7 @@
 
               <div class="d-flex justify-content-center">
                 <button
-                onclick="window.location.href = '#tools'"
+                  onclick="window.location.href = '#tools'"
                   class="btn-with-ripple grab-promo-btn d-flex align-items-center"
                 >
                   <svg
@@ -416,28 +456,32 @@
         class="ai-takeover-section custom-padding position-relative z-1 overflow-hidden"
       >
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute top-0 start-0 mw-100 z-n1"
           src="asset/images/dots-color-bg.svg"
           alt=""
         />
 
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="start-0 top-0 position-absolute mw-100 z-n1"
           src="asset/images/gradient-layers/Ellipse-left(ai).svg"
           alt=""
         />
 
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="end-0 top-0 position-absolute mw-100 z-n1"
           src="asset/images/gradient-layers/Ellipse-right(ai).svg"
           alt=""
         />
 
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="end-0 bottom-0 position-absolute mw-100 z-n1"
           style="transform: translateY(50%)"
           src="asset/images/gradient-layers/Ellipse-bottom(ai).svg"
@@ -450,7 +494,8 @@
           >
             Hey
             <span class="d-flex position-relative">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="bx-tada"
                 src="asset/images/icons/fluent-emoji_waving-hand.svg"
                 alt=""
@@ -499,7 +544,8 @@
             >
               The Artificial Intelligence (AI) + <br />
               Agency Takeover is Here!
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="position-absolute mw-100 bottom-0 start-50 translate-middle-x observer-section scaleX-0 anim-delay-03"
                 src="asset/images/lines-and-shapes/orange-line.svg"
                 alt="Underline"
@@ -547,7 +593,8 @@
                 <div
                   class="h-100 d-flex align-items-center transX55 observer-section"
                 >
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     class="w-100"
                     src="asset/images/girl(agency).svg"
                     alt="Banner"
@@ -635,21 +682,24 @@
         class="why-to-promote-section custom-padding custom-y-padding position-relative z-1 overflow-hidden"
       >
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute end-0 mw-100 z-n1"
           style="transform: translateY(-50%)"
           src="asset/images/gradient-layers/Ellipse-top-right(promote).svg"
           alt=""
         />
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute start-0 mw-100 z-n1"
           style="top: -28%"
           src="asset/images/gradient-layers/Ellipse-top-left(promote).svg"
           alt=""
         />
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute top-25 start-0 mw-100 z-n1"
           src="asset/images/gradient-layers/Ellipse 79.svg"
           alt=""
@@ -659,7 +709,8 @@
           <div class="d-flex justify-content-center mb-5">
             <p class="fnt-30 clr-white position-relative">
               Now
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="position-absolute start-50"
                 style="transform: translateX(-47%); top: -18px"
                 src="asset/images/icons/Now(arrow).svg"
@@ -848,7 +899,8 @@
                 <div
                   class="d-flex align-items-start gap-3 py-3 transX-55 observer-section"
                 >
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     src="asset/images/affiliates/Affiliate 1.svg"
                     alt="Profile Photo"
                   />
@@ -884,7 +936,8 @@
                 <div
                   class="d-flex align-items-start gap-3 py-3 transX55 observer-section"
                 >
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     src="asset/images/affiliates/Affiliate 2.svg"
                     alt="Profile Photo"
                   />
@@ -920,22 +973,30 @@
                 <div
                   class="d-flex align-items-start gap-3 py-3 transX-55 observer-section"
                 >
-                  <div style="
-                    max-width: 163px;
-                    min-width: 146px;
-                    width: 100%;
-                    border-radius: 50%;
-                    border: 7px solid #3d3d3d;
-                    height: 100%;
-                    max-height: 163px;
-                    min-height: 146px;
-                    overflow: hidden;
-                    aspect-ratio: 1/1;
-                  "> 
-                    <img loading="lazy"
+                  <div
+                    style="
+                      max-width: 163px;
+                      min-width: 146px;
+                      width: 100%;
+                      border-radius: 50%;
+                      border: 7px solid #3d3d3d;
+                      height: 100%;
+                      max-height: 163px;
+                      min-height: 146px;
+                      overflow: hidden;
+                      aspect-ratio: 1/1;
+                    "
+                  >
+                    <img
+                      loading="lazy"
                       src="asset/images/affiliates/stevetari.jpeg"
                       alt="Profile Photo"
-                      style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;"
+                      style="
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                      "
                     />
                   </div>
                   <div class="d-flex flex-column clr-white gap-3">
@@ -968,7 +1029,8 @@
                 <div
                   class="d-flex align-items-start gap-3 py-3 transX55 observer-section"
                 >
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     src="asset/images/affiliates/Affiliate 4.svg"
                     alt="Profile Photo"
                   />
@@ -1017,20 +1079,23 @@
         class="world-of-agency-ai custom-padding custom-y-padding position-relative bg-white min-vh-100"
       >
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute start-0 top-0 mw-100 z-n1"
           src="asset/images/gradient-layers/Ellipse-top-left(agency).svg"
           alt=""
         />
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute end-0 top-0 mw-100 z-n1"
           src="asset/images/gradient-layers/Ellipse-top-right(agency).svg"
           alt=""
         />
 
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute end-0 top-0 mw-100 z-n1"
           src="asset/images/gradient-layers/Ellipse green.svg"
           alt=""
@@ -1053,7 +1118,10 @@
             />
           </svg>
         </div>
-        <div id="product" class="custom-max-content mx-auto py-3 d-flex flex-column gap-5">
+        <div
+          id="product"
+          class="custom-max-content mx-auto py-3 d-flex flex-column gap-5"
+        >
           <div
             class="section-texts d-flex flex-column align-items-center justify-content-center mt-5"
           >
@@ -1121,7 +1189,8 @@
           </div>
 
           <div class="d-flex mt-5">
-            <img loading="lazy"
+            <img
+              loading="lazy"
               class="w-100 observer-section scale-0"
               src="asset/images/Group-dashboard.png"
               alt=""
@@ -1190,7 +1259,8 @@
                 <div
                   class="h-100 d-flex align-items-center observer-section transX55"
                 >
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     class="w-100"
                     src="asset/images/Group 1000001967.png"
                     alt="Banner"
@@ -1224,7 +1294,8 @@
               <span class="primary-gradient-text">AI Agency</span> Solution
             </h3>
             <div class="d-flex">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="w-100 observer-section scale-0"
                 src="asset/images/agency-solution.svg"
                 alt=""
@@ -1239,19 +1310,22 @@
         class="artificial-intelligence custom-padding position-relative min-vh-100 z-1 custom-y-padding"
       >
         <!-- 👇🏽 Gradient Layer -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute top-0 start-0 w-100 z-n1"
           src="asset/images/dots-color-bg2.svg"
           alt=""
         />
         <!-- 👇🏽 Gradient Layer -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute top-70 end-0 mw-100 z-n1"
           src="asset/images/gradient-layers/circle-gradient.svg"
           alt=""
         />
         <!-- 👇🏽 Gradient Layer -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute top-30 start-0 mw-100 z-n1"
           src="asset/images/gradient-layers/circle-gradient-left.svg"
           alt=""
@@ -1301,7 +1375,8 @@
 
               <div class="col-lg-6">
                 <div class="h-100 d-flex align-items-center position-relative">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     class="position-absolute"
                     src="asset/images/faded-img.png"
                     alt="Banner"
@@ -1708,7 +1783,12 @@
       </section>
 
       <section class="d-flex">
-        <img loading="lazy" class="w-100" src="asset/images/Frame 40207.svg" alt="" />
+        <img
+          loading="lazy"
+          class="w-100"
+          src="asset/images/Frame 40207.svg"
+          alt=""
+        />
       </section>
 
       <!-- 👇🏽 Presenting AGENCYAI -->
@@ -1718,30 +1798,44 @@
         <div class="custom-max-content mx-auto py-4 d-flex flex-column gap-5">
           <p class="fnt-32 clr-333 text-center fw-semibold">Presenting...</p>
 
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="position-absolute start-0 top-0 z-n1"
             src="asset/images/gradient-layers/Ellipse 52.svg"
             alt=""
           />
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="position-absolute end-0 top-0 z-n1"
             src="asset/images/gradient-layers/Ellipse 51.svg"
             alt=""
           />
 
           <div class="d-flex justify-content-center my-4">
-            <img loading="lazy" class="mw-100" src="asset/images/logo-large.svg" alt="" />
+            <img
+              loading="lazy"
+              class="mw-100"
+              src="asset/images/logo-large.svg"
+              alt=""
+            />
           </div>
 
           <div class="d-flex px-lg-4 position-relative">
-            <img loading="lazy" class="w-100" src="asset/images/app-preview.png" alt="" />
-            <img loading="lazy"
+            <img
+              loading="lazy"
+              class="w-100"
+              src="asset/images/app-preview.png"
+              alt=""
+            />
+            <img
+              loading="lazy"
               class="position-absolute top-0 start-0 observer-section scale-0"
               style="transform: translateY(-100%)"
               src="asset/images/lines-and-shapes/star.svg"
               alt=""
             />
-            <img loading="lazy"
+            <img
+              loading="lazy"
               class="position-absolute top-100 end-0 observer-section transX-55"
               src="asset/images/lines-and-shapes/cloud.svg"
               alt=""
@@ -1758,7 +1852,12 @@
       </section>
 
       <section id="howitworks" class="d-flex">
-        <img loading="lazy" class="w-100" src="asset/images/Frame 40212.png" alt="" />
+        <img
+          loading="lazy"
+          class="w-100"
+          src="asset/images/Frame 40212.png"
+          alt=""
+        />
       </section>
 
       <!-- 👇🏽 Watch AgencyAI in action -->
@@ -1798,18 +1897,25 @@
             style="aspect-ratio: 2 / 1"
           >
             <!-- <div style="padding:62.5% 0 0 0;position:relative;"> -->
-              <iframe 
+            <iframe
               class="mw-100 w-100 shadow-sm watch-agency-ai-video"
               width="622"
               height="311"
-                src="https://player.vimeo.com/video/858572069?h=ff8940eca7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                frameborder="0" 
-                allow="autoplay; fullscreen; picture-in-picture" 
-                style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                title="AgencyAI Demo (JV)">
-              </iframe>
+              src="https://player.vimeo.com/video/858572069?h=ff8940eca7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+              title="AgencyAI Demo (JV)"
+            >
+            </iframe>
             <!-- </div> -->
-            
+
             <!-- <iframe
               class="mw-100 w-100 shadow-sm watch-agency-ai-video"
               width="622"
@@ -1826,10 +1932,11 @@
 
       <!-- 👇🏽 DFY AI Agency Setup -->
       <section
-      id="features"
+        id="features"
         class="agency-ai-contents custom-padding custom-y-padding position-relative min-vh-100 z-1 custom-y-padding"
       >
-        <img loading="lazy"
+        <img
+          loading="lazy"
           src="asset/images/gradient-layers/pexels-tomas-anunziata-412026 1(copy).png"
           class="position-absolute top-0 start-0 w-100"
           style="z-index: -4"
@@ -1845,14 +1952,17 @@
           >
             Here’s What’s Inside <br />
             <span>
-              <img loading="lazy" src="asset/images/icons/fluent-emoji_fire.svg" alt="" />
+              <img
+                loading="lazy"
+                src="asset/images/icons/fluent-emoji_fire.svg"
+                alt=""
+              />
             </span>
             AgencyAI
           </h2>
         </div>
 
         <div
-        
           class="bg-white agency-ai-contents-inner py-5 custom-padding mx-auto w-100 mw-1250"
         >
           <div class="custom-max-content mx-auto py-5 d-flex flex-column">
@@ -1908,31 +2018,38 @@
                 <div class="col-lg-6">
                   <div class="observer-section transX-55">
                     <h3 class="fnt-30 fw-bold clr-333 mb-4">
-                      SELL YOUR AI SERVICES WITH A PROFESSIONAL PORTFOLIO WEBSITE + MARKETING RESOURCES GENERATED IN A FEW CLICKS
+                      SELL YOUR AI SERVICES WITH A PROFESSIONAL PORTFOLIO
+                      WEBSITE + MARKETING RESOURCES GENERATED IN A FEW CLICKS
                     </h3>
                     <div class="d-flex flex-column gap-4 clr-333">
                       <p class="fnt-20 line-height-normal">
-                        Spin up a fully functional agency portal 
-                        in a few clicks using our AI Agency setup. 
-                        This comes loaded with Over 40+ of the most 
-                        popular services that can be rendered using 
-                        AI which the users can customize during setup. 
-                        No Need for Hosting…
+                        Spin up a fully functional agency portal in a few clicks
+                        using our AI Agency setup. This comes loaded with Over
+                        40+ of the most popular services that can be rendered
+                        using AI which the users can customize during setup. No
+                        Need for Hosting…
                       </p>
 
                       <p class="fnt-20 line-height-normal">
-                        You also get professionally developed marketing resources like Commercial Videos, Proposals, and a lot more. 
+                        You also get professionally developed marketing
+                        resources like Commercial Videos, Proposals, and a lot
+                        more.
                       </p>
 
                       <p class="fnt-20 line-height-normal">
-                        You  can do this multiple times for a true Agency Business Setup on Demand
+                        You can do this multiple times for a true Agency
+                        Business Setup on Demand
                       </p>
 
-                      <p class="fnt-20 line-height-normal"><b>Feature Highlights:</b></p>
-                      <ul class="ulm"> 
+                      <p class="fnt-20 line-height-normal">
+                        <b>Feature Highlights:</b>
+                      </p>
+                      <ul class="ulm">
                         <li>Set Up an Agency in any Niche Instantly</li>
                         <li>Comes loaded with over 40+ Selectable Services</li>
-                        <li>Comes with Beautiful and High converting Templates</li>
+                        <li>
+                          Comes with Beautiful and High converting Templates
+                        </li>
                         <li>Loaded with Portfolio and more</li>
                         <li>Made for huge conversions</li>
                         <li>Complete Agency Branding Assets</li>
@@ -1949,7 +2066,8 @@
                   <div
                     class="h-100 d-flex align-items-center observer-section transX55"
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       class="w-100"
                       src="asset/images/Group-1000001976.png"
                       alt=""
@@ -1982,7 +2100,8 @@
               </div>
 
               <div class="d-flex">
-                <img loading="lazy"
+                <img
+                  loading="lazy"
                   class="w-100"
                   src="asset/images/Group 1000002044.png"
                   alt=""
@@ -2041,7 +2160,8 @@
               <div class="row g-5">
                 <div class="col-lg-6">
                   <div class="h-100 d-flex observer-section transX-55">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       class="w-100"
                       src="asset/images/Group 1000001977.svg"
                       alt=""
@@ -2084,7 +2204,12 @@
               </div>
 
               <div class="d-flex mb-5 observer-section">
-                <img loading="lazy" class="w-100" src="asset/images/people.png" alt="" />
+                <img
+                  loading="lazy"
+                  class="w-100"
+                  src="asset/images/people.png"
+                  alt=""
+                />
               </div>
 
               <div class="row g-5 mt-5 mb-5">
@@ -2119,7 +2244,8 @@
 
                 <div class="col-lg-6">
                   <div class="h-100 d-flex observer-section transX55">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       class="w-100"
                       src="asset/images/Group 1000001976.png"
                       alt=""
@@ -2177,7 +2303,8 @@
               <div class="row g-5">
                 <div class="col-lg-6">
                   <div class="h-100 d-flex observer-section transX-55">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       class="w-100"
                       src="asset/images/Group 1000001980.png"
                       alt=""
@@ -2205,9 +2332,12 @@
                         the right match for your skills & expertise.
                       </p>
 
-                      <ul class="ulm"> 
+                      <ul class="ulm">
                         <li>Get a consistent inflow of jobs for your agency</li>
-                        <li>Get access to the Hottest Jobs that can be rendered using AI and AgencyAI</li>
+                        <li>
+                          Get access to the Hottest Jobs that can be rendered
+                          using AI and AgencyAI
+                        </li>
                         <li>Find Jobs from globally</li>
                         <li>Advanced filters to find the most relevant jobs</li>
                       </ul>
@@ -2416,7 +2546,8 @@
 
                 <div class="col-lg-6">
                   <div class="d-flex h-100 observer-section transX55">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       class="w-100"
                       src="asset/images/Mask group (3).png"
                       alt=""
@@ -2476,7 +2607,8 @@
               <div class="row g-5 mb-4">
                 <div class="col-lg-6">
                   <div class="d-flex observer-section transX-55">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       class="w-100"
                       src="asset/images/Group 1000001983.png"
                       alt=""
@@ -2606,7 +2738,8 @@
 
                 <div class="col-lg-6">
                   <div class="h-100 d-flex observer-section transX55">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       class="w-100"
                       src="asset/images/Group 1000002049.png"
                       alt=""
@@ -2735,7 +2868,8 @@
       <section
         class="top-5-reasons custom-padding custom-y-padding position-relative min-vh-100 z-1 custom-y-padding"
       >
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute start-0 top-0 z-n1"
           src="asset/images/gradient-layers/Ellipse 3.svg"
           alt=""
@@ -2890,7 +3024,8 @@
             <div
               class="d-flex top-reason bg-white z-1 observer-section transX-55"
             >
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="position-absolute z-n1 observer-section scale-0 anim-delay-06"
                 style="left: -250px; bottom: -100px"
                 src="asset/images/icons/fluent-emoji_glowing-star.svg"
@@ -3023,7 +3158,8 @@
         class="custom-padding custom-y-padding position-relative min-vh-100 z-1 custom-y-padding overflow-hidden"
       >
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute start-0 top-0 z-n1 w-100"
           src="asset/images/gradient-layers/Mask groupppp (2).svg"
           alt=""
@@ -3049,7 +3185,8 @@
                   <h2 class="fw-bold clr-white">$700,000</h2>
 
                   <div class="d-flex">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       class="launch-logo"
                       style="filter: invert(100%)"
                       src="asset/images/mobimatic.png"
@@ -3068,7 +3205,8 @@
                   <h2 class="fw-bold clr-white">$100,000</h2>
 
                   <div class="d-flex">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       class="launch-logo"
                       src="asset/images/pandora.png"
                       alt=""
@@ -3086,7 +3224,8 @@
                   <h2 class="fw-bold clr-white">$210,000</h2>
 
                   <div class="d-flex">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       class="launch-logo"
                       src="asset/images/burger.png"
                       alt=""
@@ -3186,7 +3325,11 @@
                 class="bg-white reciprocate-box d-flex flex-column observer-section transY-35"
               >
                 <div class="d-flex">
-                  <img loading="lazy" src="asset/images/logos/videomix.svg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="asset/images/logos/videomix.svg"
+                    alt=""
+                  />
                 </div>
 
                 <p class="fnt-20">
@@ -3203,7 +3346,11 @@
                 class="bg-white reciprocate-box d-flex flex-column observer-section transY-35 anim-delay-03"
               >
                 <div class="d-flex">
-                  <img loading="lazy" src="asset/images/logos/ada-comply.svg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="asset/images/logos/ada-comply.svg"
+                    alt=""
+                  />
                 </div>
 
                 <p class="fnt-20">
@@ -3220,7 +3367,11 @@
                 class="bg-white reciprocate-box d-flex flex-column observer-section transY-35 anim-delay-06"
               >
                 <div class="d-flex">
-                  <img loading="lazy" src="asset/images/logos/e-deals.svg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="asset/images/logos/e-deals.svg"
+                    alt=""
+                  />
                 </div>
 
                 <p class="fnt-20">
@@ -3237,7 +3388,11 @@
                 class="bg-white reciprocate-box d-flex flex-column observer-section transY-35"
               >
                 <div class="d-flex">
-                  <img loading="lazy" src="asset/images/logos/market-presso.svg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="asset/images/logos/market-presso.svg"
+                    alt=""
+                  />
                 </div>
 
                 <p class="fnt-20">
@@ -3255,7 +3410,11 @@
                 class="bg-white reciprocate-box d-flex flex-column observer-section transY-35 anim-delay-03"
               >
                 <div class="d-flex">
-                  <img loading="lazy" src="asset/images/logos/click-designs.svg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="asset/images/logos/click-designs.svg"
+                    alt=""
+                  />
                 </div>
 
                 <p class="fnt-20">
@@ -3272,7 +3431,11 @@
                 class="bg-white reciprocate-box d-flex flex-column observer-section transY-35 anim-delay-06"
               >
                 <div class="d-flex">
-                  <img loading="lazy" src="asset/images/logos/videotik.svg" alt="" />
+                  <img
+                    loading="lazy"
+                    src="asset/images/logos/videotik.svg"
+                    alt=""
+                  />
                 </div>
 
                 <p class="fnt-20">
@@ -3302,11 +3465,16 @@
                     class="affiliate-banner medal d-flex align-items-center justify-content-center"
                     style="transform: translateX(50%)"
                   >
-                    <img loading="lazy" src="asset/images/medal.png" alt="Medal" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/medal.png"
+                      alt="Medal"
+                    />
                   </div>
 
                   <div class="d-flex">
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src="asset/images/Realistic-golden-trophy.png"
                       alt=""
                     />
@@ -3326,7 +3494,8 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src="asset/images/logos/digital-landlord.png"
                       alt="Digital Landlord"
                     />
@@ -3343,7 +3512,8 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src="asset/images/logos/marketing-blocks.png"
                       alt="Marketing Blocks"
                     />
@@ -3360,7 +3530,11 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy" src="asset/images/logos/hostley.png" alt="Hostley" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/logos/hostley.png"
+                      alt="Hostley"
+                    />
                   </div>
 
                   <div class="d-flex flex-column name-and-price">
@@ -3374,7 +3548,11 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy" src="asset/images/logos/appitize.png" alt="Appimize" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/logos/appitize.png"
+                      alt="Appimize"
+                    />
                   </div>
 
                   <div class="d-flex flex-column name-and-price">
@@ -3388,7 +3566,8 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src="asset/images/logos/vidproposal.png"
                       alt="VidProposal"
                     />
@@ -3405,7 +3584,8 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src="asset/images/logos/virtual-reel.png"
                       alt="VirtualReel"
                     />
@@ -3422,7 +3602,11 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy" src="asset/images/logos/ez-deals.png" alt="EZDeals" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/logos/ez-deals.png"
+                      alt="EZDeals"
+                    />
                   </div>
 
                   <div class="d-flex flex-column name-and-price">
@@ -3436,7 +3620,11 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy" src="asset/images/logos/videotik.png" alt="VideoTik" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/logos/videotik.png"
+                      alt="VideoTik"
+                    />
                   </div>
 
                   <div class="d-flex flex-column name-and-price">
@@ -3459,7 +3647,11 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy" src="asset/images/logos/qr-verse.png" alt="QRVerse" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/logos/qr-verse.png"
+                      alt="QRVerse"
+                    />
                   </div>
 
                   <div class="d-flex flex-column name-and-price">
@@ -3473,7 +3665,8 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src="asset/images/logos/marketing-blocks.png"
                       alt="QuizTarget"
                     />
@@ -3490,7 +3683,8 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src="asset/images/logos/vr-agency.png"
                       alt="VRAgency"
                     />
@@ -3507,7 +3701,8 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src="asset/images/logos/doodle-maker.png"
                       alt="DoodleMaker"
                     />
@@ -3524,7 +3719,8 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src="asset/images/logos/click-designs.png"
                       alt="ClickDesigns"
                     />
@@ -3541,7 +3737,8 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src="asset/images/logos/copy-blocks.png"
                       alt="CopyBlocks"
                     />
@@ -3558,7 +3755,8 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src="asset/images/logos/leads-gorilla.png"
                       alt="EZDeals"
                     />
@@ -3575,7 +3773,11 @@
                   <div
                     class="affiliate-banner bg-black d-flex align-items-center justify-content-center"
                   >
-                    <img loading="lazy" src="asset/images/logos/videotik.png" alt="VideoTik" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/logos/videotik.png"
+                      alt="VideoTik"
+                    />
                   </div>
 
                   <div class="d-flex flex-column name-and-price">
@@ -3595,7 +3797,8 @@
         class="affiliate-contest custom-padding custom-y-padding position-relative min-vh-100 z-1 custom-y-padding overflow-hidden"
       >
         <!-- 👇🏽 Background Gradient -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute start-0 top-0 z-n1 w-100"
           src="asset/images/gradient-layers/group-contest.svg"
           alt=""
@@ -3608,14 +3811,16 @@
               class="text-bigger text-center fw-bold position-relative mb-1 z-1"
             >
               <span class="primary-gradient-text">The Contest</span>
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="position-absolute top-0 z-n1"
                 style="transform: translateX(-100%); left: -100px"
                 src="asset/images/icons/dollar-dollar-color.png"
                 alt="Coin"
               />
 
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="position-absolute bottom-0 z-n1"
                 style="transform: translateX(100%); right: -100px"
                 src="asset/images/icons/dollar-dollar-color (1).png"
@@ -3626,13 +3831,15 @@
 
           <!-- 👇🏽 Opening Contest Container -->
           <div class="contest-main-box my-5 py-5 position-relative z-1">
-            <img loading="lazy"
+            <img
+              loading="lazy"
               class="position-absolute w-100 start-0 top-0 z-n1"
               src="asset/images/gradient-layers/image 3 (Traced).svg"
               alt=""
             />
 
-            <img loading="lazy"
+            <img
+              loading="lazy"
               class="position-absolute top-0 start-50 translate-middle z-1"
               style="transform: translateX(100%); right: -100px"
               src="asset/images/icons/dollar-dollar-color (2).png"
@@ -3656,7 +3863,11 @@
                   <div
                     class="d-flex flex-column justify-content-end gap-3 observer-section scale-0 anim-delay-03"
                   >
-                    <img loading="lazy" src="asset/images/2nd.png" alt="Trophy" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/2nd.png"
+                      alt="Trophy"
+                    />
 
                     <div class="d-flex flex-column text-center">
                       <p class="fnt-24 clr-white">2nd Place</p>
@@ -3667,7 +3878,11 @@
                   <div
                     class="d-flex flex-column justify-content-end gap-3 observer-section scale-0"
                   >
-                    <img loading="lazy" src="asset/images/1st.png" alt="Trophy" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/1st.png"
+                      alt="Trophy"
+                    />
 
                     <div class="d-flex flex-column text-center">
                       <p class="fnt-24 clr-white">1st Place</p>
@@ -3678,7 +3893,11 @@
                   <div
                     class="d-flex flex-column justify-content-end gap-3 align-items-center observer-section scale-0 anim-delay-06"
                   >
-                    <img loading="lazy" src="asset/images/3rd.png" alt="Trophy" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/3rd.png"
+                      alt="Trophy"
+                    />
 
                     <div class="d-flex flex-column text-center">
                       <p class="fnt-24 clr-white">3rd Place</p>
@@ -3691,7 +3910,11 @@
                   <div
                     class="d-flex flex-column justify-content-end gap-3 observer-section scale-0 anim-delay-03"
                   >
-                    <img loading="lazy" src="asset/images/4th.png" alt="Trophy" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/4th.png"
+                      alt="Trophy"
+                    />
 
                     <div class="d-flex flex-column text-center">
                       <p class="fnt-24 clr-white">4th Place</p>
@@ -3702,7 +3925,11 @@
                   <div
                     class="d-flex flex-column justify-content-end gap-3 align-items-center observer-section scale-0 anim-delay-06"
                   >
-                    <img loading="lazy" src="asset/images/5th.png" alt="Trophy" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/5th.png"
+                      alt="Trophy"
+                    />
 
                     <div class="d-flex flex-column text-center">
                       <p class="fnt-24 clr-white">5th Place</p>
@@ -3744,13 +3971,15 @@
 
           <!-- 👇🏽 Closing Contest Container -->
           <div class="closing-contest-main-box my-5 py-5 position-relative z-1">
-            <img loading="lazy"
+            <img
+              loading="lazy"
               class="position-absolute w-100 h-100 object-fit-cover start-0 top-0"
               style="z-index: -3; mix-blend-mode: multiply"
               src="asset/images/gradient-layers/Vector (5).png"
               alt=""
             />
-            <img loading="lazy"
+            <img
+              loading="lazy"
               class="position-absolute top-50 start-50 translate-middle z-n1"
               src="asset/images/gradient-layers/Ellipse 50.png"
               alt=""
@@ -3794,7 +4023,11 @@
                 <div
                   class="d-flex flex-column justify-content-end gap-3 observer-section scale-0"
                 >
-                  <img loading="lazy" src="asset/images/1st..png" alt="Trophy" />
+                  <img
+                    loading="lazy"
+                    src="asset/images/1st..png"
+                    alt="Trophy"
+                  />
 
                   <div class="d-flex flex-column text-center">
                     <p class="fnt-24 clr-white">1st Place</p>
@@ -3804,7 +4037,11 @@
                 <div
                   class="d-flex flex-column justify-content-end gap-3 observer-section scale-0 anim-delay-03"
                 >
-                  <img loading="lazy" src="asset/images/2nd..png" alt="Trophy" />
+                  <img
+                    loading="lazy"
+                    src="asset/images/2nd..png"
+                    alt="Trophy"
+                  />
 
                   <div class="d-flex flex-column text-center">
                     <p class="fnt-24 clr-white">2nd Place</p>
@@ -3895,7 +4132,8 @@
 
                   <h3 class="fnt-60 clr-white fw-bold mb-3">$47</h3>
 
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     class="position-absolute start-0 w-100 bottom-0 z-n1"
                     src="asset/images/gradient-layers/otolayer-blue.svg"
                     alt=""
@@ -3941,7 +4179,8 @@
 
                   <h3 class="fnt-60 clr-white fw-bold mb-3">$67</h3>
 
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     class="position-absolute start-0 w-100 bottom-0 z-n1"
                     src="asset/images/gradient-layers/otolayer-green.svg"
                     alt=""
@@ -3987,7 +4226,8 @@
 
                   <h3 class="fnt-60 clr-white fw-bold mb-3">$67</h3>
 
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     class="position-absolute start-0 w-100 bottom-0 z-n1"
                     src="asset/images/gradient-layers/otolayer-black.svg"
                     alt=""
@@ -4037,7 +4277,8 @@
 
                   <h3 class="fnt-60 clr-white fw-bold mb-3">$97</h3>
 
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     class="position-absolute start-0 w-100 bottom-0 z-n1"
                     src="asset/images/gradient-layers/otolayer-purple.svg"
                     alt=""
@@ -4083,7 +4324,8 @@
 
                   <h3 class="fnt-60 clr-white fw-bold mb-3">$197</h3>
 
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     class="position-absolute start-0 w-100 bottom-0 z-n1"
                     src="asset/images/gradient-layers/otolayer-darkpurple.svg"
                     alt=""
@@ -4129,7 +4371,8 @@
 
                   <h3 class="fnt-60 clr-white fw-bold mb-3">$67</h3>
 
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     class="position-absolute start-0 w-100 bottom-0 z-n1"
                     src="asset/images/gradient-layers/otolayer-yellow.svg"
                     alt=""
@@ -4574,7 +4817,8 @@
       <section
         class="d-flex flex-column gap-5 py-5 custom-padding position-relative z-1 overflow-hidden"
       >
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute start-0 top-0 w-100 z-n1"
           src="asset/images/gradient-layers/Group 1000002074.svg"
           alt=""
@@ -4586,7 +4830,11 @@
           >
             <div class="d-flex align-items-center gap-3 gap-md-4">
               <div class="rocket-div rounded-circle">
-                <img loading="lazy" src="asset/images/icons/rocket.svg" alt="" />
+                <img
+                  loading="lazy"
+                  src="asset/images/icons/rocket.svg"
+                  alt=""
+                />
               </div>
 
               <div class="d-flex flex-column launch-time-texts gap-2">
@@ -4609,7 +4857,11 @@
                 >
                   <span>Get your </span>
                   <span class="d-flex">
-                    <img loading="lazy" src="asset/images/jvzoo-logo.svg" alt="Jvzoo Logo" />
+                    <img
+                      loading="lazy"
+                      src="asset/images/jvzoo-logo.svg"
+                      alt="Jvzoo Logo"
+                    />
                   </span>
                   <span>Affiliate</span>
                 </p>
@@ -4717,13 +4969,15 @@
 
           <div class="d-flex align-items-center">
             <div class="flex-one position-relative">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="w-100 h-100 object-fit-cover z-1 observer-section transY-35 observer-section scale-0"
                 src="asset/images/ceo.png"
                 alt="Mr. Godswill Okoyomon"
               />
 
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="position-absolute start-0 bottom-0 w-100 z-n1"
                 src="asset/images/ceo-gradient.svg"
                 alt=""
@@ -4782,13 +5036,15 @@
         class="artificial-intelligence my-footer custom-padding position-relative min-vh-100 z-1 pt-5 overflow-hidden"
       >
         <!-- 👇🏽 Gradient Layer -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute top-70 end-0 mw-100 z-n1"
           src="asset/images/gradient-layers/circle-gradient.svg"
           alt=""
         />
         <!-- 👇🏽 Gradient Layer -->
-        <img loading="lazy"
+        <img
+          loading="lazy"
           class="position-absolute top-30 start-0 mw-100 z-n1"
           src="asset/images/gradient-layers/circle-gradient-left.svg"
           alt=""
@@ -4840,7 +5096,8 @@
 
               <div class="col-lg-6">
                 <div class="h-100 d-flex align-items-center position-relative">
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     class="position-absolute"
                     src="asset/images/Mask group (4).png"
                     alt="Banner"
