@@ -33,59 +33,73 @@
     <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
   </head>
 
-  <body>
+  
+  <body class="pos:relative" onscroll="scrollThis">
+    <!-- 👇🏽 App Header -->
+    <header class="app-header">
+      <div
+        class="d-flex align-items-center justify-content-between header-max custom-padding mx-auto"
+      >
+        <a href="index.html" class="logo">
+          <img loading="lazy" src="asset/images/logo.svg" alt="Logo" />
+        </a>
+
+        <nav class="header-links">
+          <ul class="d-flex align-items-center nav-links">
+            <li class="d-flex">
+              <a class="nav-link" href="#product">Product</a>
+            </li>
+
+            <li class="d-flex">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+
+            <li class="d-flex">
+              <a class="nav-link" href="#howitworks">How it works</a>
+            </li>
+
+            <li class="d-flex">
+              <a class="nav-link" href="#tools">Tools</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div>
+          <a
+            class="d-flex affiliate-link primary-btn btn-with-ripple"
+            href="https://www.jvzoo.com/affiliate/affiliateinfonew/index/398421"
+            target="_blank"
+          >
+            Affiliate Link
+            <span class="btn-ripple"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <script> 
+      var navbar = document.querySelector('.app-header')
+    
+      window.onscroll = function() {
+        // pageYOffset or scrollY
+        if (window.pageYOffset > 0) {
+          navbar.classList.add('scrolled')
+        } else {
+          navbar.classList.remove('scrolled')
+        }
+      }
+    </script>
+    <!-- 👇🏽 Section Background Image -->
+    <img
+      loading="lazy"
+      class="position-absolute w-100 hero-bg-img top-0 start-0 z-n1"
+      src="asset/images/Mask group.svg"
+      alt=""
+    />
+
     <div class="container-fluid p-0">
       <!-- 👇🏽 Welcome/Hero Section -->
-      <section class="position-relative">
-        <!-- 👇🏽 App Header -->
-        <header class="app-header">
-          <div
-            class="d-flex align-items-center justify-content-between header-max custom-padding mx-auto"
-          >
-            <a href="index.html" class="logo">
-              <img loading="lazy" src="asset/images/logo.svg" alt="Logo" />
-            </a>
+      <section class="position-relative pt-5">
 
-            <nav class="header-links">
-              <ul class="d-flex align-items-center nav-links">
-                <li class="d-flex">
-                  <a class="nav-link" href="#product">Product</a>
-                </li>
-
-                <li class="d-flex">
-                  <a class="nav-link" href="#features">Features</a>
-                </li>
-
-                <li class="d-flex">
-                  <a class="nav-link" href="#howitworks">How it works</a>
-                </li>
-
-                <li class="d-flex">
-                  <a class="nav-link" href="#tools">Tools</a>
-                </li>
-              </ul>
-            </nav>
-
-            <div>
-              <a
-                class="d-flex affiliate-link primary-btn btn-with-ripple"
-                href="https://www.jvzoo.com/affiliate/affiliateinfonew/index/398421"
-                target="_blank"
-              >
-                Affiliate Link
-                <span class="btn-ripple"></span>
-              </a>
-            </div>
-          </div>
-        </header>
-
-        <!-- 👇🏽 Section Background Image -->
-        <img
-          loading="lazy"
-          class="position-absolute w-100 hero-bg-img top-0 start-0 z-n1"
-          src="asset/images/Mask group.svg"
-          alt=""
-        />
 
         <div
           class="welcome-container mt-3 py-5 header-max mx-auto custom-padding"
@@ -3100,7 +3114,7 @@
             <div class="d-flex justify-content-center">
               <div class="position-relative d-flex">
                 <a
-                  href="#"
+                  href="#tools"
                   class="get-affiliate-link bg-blue d-flex align-items-center gap-2 clr-white z-1 observer-section scale-0 anim-delay-06"
                 >
                   <svg
@@ -3205,13 +3219,13 @@
                 >
                   <button class="fnt-24 fw-medium">Launch Revenue</button>
 
-                  <h2 class="fw-bold clr-white">$100,000</h2>
+                  <h2 class="fw-bold clr-white">$150,000</h2>
 
                   <div class="d-flex">
                     <img
                       loading="lazy"
                       class="launch-logo"
-                      src="asset/images/pandora.png"
+                      src="asset/images/meta/socialagency.webp"
                       alt=""
                     />
                   </div>
@@ -3857,7 +3871,7 @@
               <div class="contest-date d-flex justify-content-center mb-5">
                 <h5 class="fnt-30 shadow-sm">
                   <span style="color: #eabd57">72 Hrs Opening Contest:</span>
-                  <span class="clr-white">24th - 27th August</span>
+                  <span class="clr-white">9th - 12th September</span>
                 </h5>
               </div>
 
@@ -3874,7 +3888,7 @@
 
                     <div class="d-flex flex-column text-center">
                       <p class="fnt-24 clr-white">2nd Place</p>
-                      <h5 class="clr-white fnt-37 fw-bold">$1,500</h5>
+                      <h5 class="clr-white fnt-37 fw-bold">$500</h5>
                     </div>
                   </div>
 
@@ -3889,7 +3903,7 @@
 
                     <div class="d-flex flex-column text-center">
                       <p class="fnt-24 clr-white">1st Place</p>
-                      <h5 class="clr-white fnt-37 fw-bold">$2,000</h5>
+                      <h5 class="clr-white fnt-37 fw-bold">$1,500</h5>
                     </div>
                   </div>
 
@@ -3904,7 +3918,7 @@
 
                     <div class="d-flex flex-column text-center">
                       <p class="fnt-24 clr-white">3rd Place</p>
-                      <h5 class="clr-white fnt-37 fw-bold">$500</h5>
+                      <h5 class="clr-white fnt-37 fw-bold">$250</h5>
                     </div>
                   </div>
                 </div>
@@ -3921,7 +3935,7 @@
 
                     <div class="d-flex flex-column text-center">
                       <p class="fnt-24 clr-white">4th Place</p>
-                      <h5 class="clr-white fnt-37 fw-bold">$200</h5>
+                      <h5 class="clr-white fnt-37 fw-bold">$100</h5>
                     </div>
                   </div>
 
@@ -3936,7 +3950,7 @@
 
                     <div class="d-flex flex-column text-center">
                       <p class="fnt-24 clr-white">5th Place</p>
-                      <h5 class="clr-white fnt-37 fw-bold">$100</h5>
+                      <h5 class="clr-white fnt-37 fw-bold">$50</h5>
                     </div>
                   </div>
                 </div>
@@ -4018,7 +4032,7 @@
               <div class="contest-date d-flex justify-content-center my-5">
                 <h5 class="fnt-30 shadow-sm">
                   <span style="color: #eabd57">Date: </span>
-                  <span class="clr-white"> 24th - 27th August</span>
+                  <span class="clr-white"> 9th - 12th September</span>
                 </h5>
               </div>
 
