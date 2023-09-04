@@ -1115,7 +1115,7 @@ body .observer-section.intersecting {
   font-size: 54px;
 }
 .history-repeats {
-  max-width: 650px;
+  max-width: 700px;
   padding: var(--font-35) var(--font-16);
   border-radius: 1rem;
   border: 1px solid #e4a7ff;
